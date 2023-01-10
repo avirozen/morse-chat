@@ -1,0 +1,17 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><comment id="TYx@X=|D^Bzwq,y$oGb?" x="96" y="530" h="200" w="200">תרגיל כיתה: 
+1.
+להוסיף פעולה שמבטלת את המילה האחרונה.
+2.
+ להוסיף פעולה שמציינת רווח בין מילים</comment><block type="pxt-on-start" id=",Fn2R$$CVbpuI_!glA7Y" x="0" y="0"><statement name="HANDLER"><block type="radio_set_group" id="*R7joWYy(8m8/O;9gO9p"><value name="ID"><shadow type="math_number_minmax" id="A?|g(t2a4Tg_@%tcvQMr"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">1</field></shadow></value></block></statement></block><block type="radio_on_number_drag" id="N@K9ppH8}@C6G(*T9Vcl" x="352" y="-1"><value name="HANDLER_DRAG_PARAM_receivedNumber"><shadow type="argument_reporter_number" id="so6D)yI5d5iD#zx^TOzd"><field name="VALUE">receivedNumber</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="|~~,eU=0D5af{f.YI]V#"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="l?r(~ttkcllh)2?W5M}0"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="Yfk}c%U^Y%Rk8]:{P6GB"><field name="VALUE">receivedNumber</field></block></value><value name="B"><shadow type="math_number" id="0]Ai$?dV|]!5}1p_yw`g"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="D!f}!M%F;g,}sD+cx3z["><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_play_note" id="ji@;jvX;YlV32KED5%5T"><value name="note"><shadow type="device_note" id=".}r]Oh9}|]r*Id5-3oAQ"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="5BNhk*_-jvOPA4VZB4w3"><field name="fraction">BeatFraction.Quarter</field></shadow></value></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="82_83@+}8YG+z)UmS[*}"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . # # # . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_play_note" id="t!0Rk8L1sppJy~]g%)16"><value name="note"><shadow type="device_note" id="amJ~]~OP:?qbP.hC(sch"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="S@9oz+7NF]x,Oa9@%S55"><field name="fraction">BeatFraction.Whole</field></shadow></value></block></next></block></statement><next><block type="device_clear_display" id="a5L^mvVAk^^=_dM(Rs4P"></block></next></block></statement></block><block type="input_logo_event" id="uZyjz`[mq(V5KHCb:*Ui" x="-1" y="149"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="radio_datagram_send" id="r#Lo-l*RRE-2Y4Gy$S{w"><value name="value"><shadow type="math_number" id="ftYQxcasc;ogcBC79TjF"><field name="NUM">0</field></shadow></value></block></statement></block><block type="input_logo_event" id="oLpWksQa9Q.F%hA7)vI?" x="-4" y="311"><field name="action">TouchButtonEvent.LongPressed</field><statement name="HANDLER"><block type="radio_datagram_send" id="DKHZAvPYeVI%zs]w-UPJ"><value name="value"><shadow type="math_number" id="8J8aS3$f(z{xO!j`eU{3"><field name="NUM">1</field></shadow></value></block></statement></block></xml>
